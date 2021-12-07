@@ -1,4 +1,4 @@
-#Project Overview
+# Project Overview
 As the name of this project would imply, this intended purpose of this code is to use a webcam (either integrated or external usb) to 
 measure the light in a room based off of the pictures it takes. The program will then analyze every pixel in the photo, calculate the 
 light detected by the camera using the luminance formula (0.21 x R) + (0.72 x G) + (0.07 x B), and divide the total luminance score by the
@@ -7,13 +7,13 @@ score to a ThingSpeak server so that it can be graphed and later compared with t
 times, in order for a minute's worth of recordings to have taken place. In between each function call, a delay of 16 seconds is implemented
 to provide ThingSpeak time to plot the score before the next picture is taken. 
 
-#Disclaimer
+# Disclaimer
 This project will require a webcam or integrated laptop camera, several thirdparty libraries, and a linux-based operating system preferably. 
 I personally used Ubuntu to build and run this program, but I will point out that Windows Subsystems for Linux will most likely NOT work for 
 this project due to some interal permissions issues with camera access. I have also been unable to test this with MacOS, so I cannot 
 guarantee it will work either.
 
-#Instructions to Run Program
+# Instructions to Run Program
 1.) First, download OpenCV and Pillow for Python. These libraries are required for the program to be able to take the picture and analyze it.
     The instructions to download OpenCV can be found at [link](https://pypi.org/project/opencv-python/), and the instructions to download Pillow
     can be found at [link](https://pillow.readthedocs.io/en/stable/installation.html).
@@ -37,6 +37,6 @@ guarantee it will work either.
 6.) Finally, the last thing to do is to open a command prompt and go to the directory that the file was saved in. To run this python script,
     Type the command `python3 IoTFinal.py` in the terminal and smile for the camera!
     
-#Results
+# Results
 The results of my tests of this program can be found on my google site! [link](https://sites.google.com/stevens.edu/ee629hat/final-project?authuser=0)
 While you're there, feel free to check out some of the other work I've done for my EE629-A Internet of Things class!
